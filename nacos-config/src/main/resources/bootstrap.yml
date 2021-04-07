@@ -1,0 +1,23 @@
+server:
+  port: 56013 #启动端口
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacosconfig
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        extension-configs:
+          - data-id: test.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+
+
+
+
+
+
